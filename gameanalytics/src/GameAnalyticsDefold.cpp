@@ -414,7 +414,7 @@ namespace gameanalytics
             jni_configureUserId(userId);
 #elif defined(DM_PLATFORM_HTML5)
             js_configureUserId(userId);
-#elifdefined(DM_PLATFORM_WINDOWS) || defined(DM_PLATFORM_LINUX)
+#elif defined(DM_PLATFORM_WINDOWS) || defined(DM_PLATFORM_LINUX)
             gameanalytics::GameAnalytics::configureUserId(userId);
 #endif
         }
